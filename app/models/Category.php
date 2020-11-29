@@ -20,7 +20,10 @@ class Category extends Model
 
     public static function getAll(bool $withThreads = true): array
     {
-        return []; // TODO: Implement getByID() method.
+        return [
+            new Category("test"),
+            new Category("test")
+        ]; // TODO: Implement getByID() method.
     }
 
     static function getByID(int $id): ?Category
