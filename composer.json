@@ -1,0 +1,16 @@
+{
+    "name": "tumisoft/forum",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Michal Tuček",
+            "email": "michaltk1@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "TuMiSoft\\Forum\\": "app/"
+        }
+    }
+}

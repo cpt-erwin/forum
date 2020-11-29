@@ -1,9 +1,10 @@
 <?php
 
 require_once "router.php";
+require_once "vendor/autoload.php";
 
 route('/', function () {
-    return "Hello World!";
+    return json_encode(['users' => \TuMiSoft\Forum\Models\User::getAll()]);
 });
 
 $action = $_SERVER['REQUEST_URI'];
