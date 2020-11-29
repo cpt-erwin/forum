@@ -1,6 +1,16 @@
 {
     "name": "tumi-soft/forum",
     "type": "project",
+    "description": "A simple forum made from scratch for learning purposes using PHP 7.4",
+    "keywords": [
+        "php",
+        "api",
+        "json",
+        "i18n",
+        "forum"
+    ],
+    "homepage": "https://github.com/tumi-soft/forum",
+    "license": "apache-2.0",
     "authors": [
         {
             "name": "Michal Tuček",
@@ -8,11 +18,16 @@
         }
     ],
     "require": {
+        "php" : ">=7.4",
         "ext-json": "*"
     },
+    "require-dev": {},
+    "config": {},
     "autoload": {
         "psr-4": {
             "TuMiSoft\\Forum\\": "app/"
         }
-    }
+    },
+    "autoload-dev": {},
+    "scripts": {}
 }
