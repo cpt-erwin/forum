@@ -2,15 +2,19 @@
 
 namespace TuMiSoft\Forum\Models;
 
+use JsonSerializable;
 use TuMiSoft\Forum\Exceptions\Models\ModelNotFoundException;
 
-abstract class Model
+abstract class Model implements JsonSerializable
 {
-    protected string $table;
+    /** @var string|null DB table reference */
+    protected ?string $table = null;
 
     public function __construct()
     {
-        $this->table = get_class($this);
+        if (is_null($this->table)) {
+            $this->table = get_class($this);
+        }
     }
 
     /**
